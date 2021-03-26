@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "doctors",
+  "info": {
+    "name": "Doctor",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "doctor_id": {
+      "type": "uid"
+    },
+    "description": {
+      "type": "string"
+    },
+    "mobile": {
+      "type": "biginteger"
+    },
+    "address": {
+      "type": "string"
+    },
+    "image_url_1": {
+      "type": "string"
+    },
+    "city": {
+      "model": "city"
+    }
+  }
+}

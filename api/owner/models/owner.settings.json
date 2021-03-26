@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "owners",
+  "info": {
+    "name": "Owner",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "owner_id": {
+      "type": "uid"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "mobile": {
+      "type": "biginteger"
+    },
+    "address": {
+      "type": "text"
+    },
+    "city": {
+      "model": "city"
+    }
+  }
+}

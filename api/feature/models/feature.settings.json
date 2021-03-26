@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "features",
+  "info": {
+    "name": "Feature",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "feature_id": {
+      "type": "uid",
+      "required": true
+    },
+    "weight": {
+      "type": "biginteger",
+      "required": true
+    },
+    "height": {
+      "type": "biginteger",
+      "required": true
+    },
+    "animal_length": {
+      "type": "biginteger",
+      "required": true
+    },
+    "teeth": {
+      "type": "integer"
+    },
+    "horn_size": {
+      "type": "integer"
+    },
+    "health": {
+      "type": "enumeration",
+      "enum": [
+        "good",
+        "average",
+        "bad"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "skin": {
+      "type": "string"
+    },
+    "image_url_1": {
+      "type": "string"
+    },
+    "image_url_2": {
+      "type": "string"
+    },
+    "image_url_3": {
+      "type": "string"
+    },
+    "flock": {
+      "via": "features",
+      "model": "flock"
+    }
+  }
+}

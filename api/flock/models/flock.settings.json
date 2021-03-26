@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "flocks",
+  "info": {
+    "name": "Flock",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "animal_id": {
+      "type": "uid",
+      "required": true
+    },
+    "breed_id": {
+      "model": "breed"
+    },
+    "age": {
+      "type": "integer",
+      "required": true
+    },
+    "dob": {
+      "type": "date",
+      "required": true
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "white",
+        "black",
+        "brown"
+      ]
+    },
+    "owner_id": {
+      "model": "owner"
+    },
+    "bought_on": {
+      "type": "date",
+      "required": true
+    },
+    "in_house": {
+      "type": "boolean",
+      "required": true
+    },
+    "buy_price": {
+      "type": "integer"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female"
+      ]
+    },
+    "image_url_1": {
+      "type": "string"
+    },
+    "image_url_2": {
+      "type": "string"
+    },
+    "image_url_3": {
+      "type": "string"
+    },
+    "features": {
+      "collection": "feature",
+      "via": "flock"
+    }
+  }
+}

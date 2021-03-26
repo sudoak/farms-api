@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "breeds",
+  "info": {
+    "name": "Breed",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "breed_id": {
+      "type": "uid"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "image_url_1": {
+      "type": "string"
+    },
+    "image_url_2": {
+      "type": "string"
+    }
+  }
+}

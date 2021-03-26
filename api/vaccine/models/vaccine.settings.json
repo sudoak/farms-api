@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vaccines",
+  "info": {
+    "name": "Vaccine"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "vaccine_id": {
+      "type": "uid"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "vaccine_url": {
+      "type": "string"
+    },
+    "img_url_1": {
+      "type": "string"
+    },
+    "img_url_2": {
+      "type": "string"
+    }
+  }
+}
